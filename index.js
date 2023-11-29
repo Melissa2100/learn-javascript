@@ -6,9 +6,10 @@
 //1. Declaration (var, let, const)
 // 2. Assignment (assignment operator)
 
-let firstName = "Pascal";
-let age = 21;
-let student = true;
+//3 data types
+let firstName = "Pascal"; //strings
+let age = 21; //number
+let student = true; //boolean
 document.getElementById("p1").innerHTML = "Hello " + firstName;
 document.getElementById("p2").innerHTML = "You are " + age + " years old";
 document.getElementById("p3").innerHTML = "Enrolled: " + student;
