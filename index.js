@@ -20,3 +20,9 @@ document.getElementById("myButton").onclick = function () {
   console.log(username);
   document.getElementById("myLabel").innerHTML = "Hello " + username;
 };
+
+// type conversion
+let age = window.prompt("How old are you?");
+age = Number(age);
+age += 1;
+console.log("Happy Birthday! You are", age, "years old");
