@@ -27,7 +27,20 @@
 // age += 1;
 // console.log("Happy Birthday! You are", age, "years old");
 
-let x = 3.14;
+// let x = 3.14;
 
-x = Math.round(x);
-console.log(x);
+// x = Math.round(x);
+// console.log(x);
+
+let a;
+let b;
+let c;
+
+a = window.prompt("Enter side A");
+a = Number(a);
+
+b = window.prompt("Enter side B");
+b = Number(b);
+
+c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+console.log("side C:", c);
