@@ -32,15 +32,15 @@
 // x = Math.round(x);
 // console.log(x);
 
-let a;
-let b;
-let c;
+// let a;
+// let b;
+// let c;
 
-a = window.prompt("Enter side A");
-a = Number(a);
+// a = window.prompt("Enter side A");
+// a = Number(a);
 
-b = window.prompt("Enter side B");
-b = Number(b);
+// b = window.prompt("Enter side B");
+// b = Number(b);
 
-c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
-console.log("side C:", c);
+// c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+// console.log("side C:", c);
