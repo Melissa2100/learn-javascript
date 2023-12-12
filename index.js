@@ -74,17 +74,26 @@
 //   document.getElementById("countLabel").innerHTML = count;
 // };
 
-// math
-let x;
-let y;
-let z;
+// math(generating numbers)
+// let x;
+// let y;
+// let z;
 
-document.getElementById("rollButton").onclick = function () {
-  x = Math.floor(Math.random() * 6) + 1;
-  y = Math.floor(Math.random() * 6) + 1;
-  z = Math.floor(Math.random() * 6) + 1;
+// document.getElementById("rollButton").onclick = function () {
+//   x = Math.floor(Math.random() * 6) + 1;
+//   y = Math.floor(Math.random() * 6) + 1;
+//   z = Math.floor(Math.random() * 6) + 1;
 
-  document.getElementById("xlabel").innerHTML = x;
-  document.getElementById("ylabel").innerHTML = y;
-  document.getElementById("zlabel").innerHTML = z;
- };
+//   document.getElementById("xlabel").innerHTML = x;
+//   document.getElementById("ylabel").innerHTML = y;
+//   document.getElementById("zlabel").innerHTML = z;
+//  };
+
+// string properties and methods
+let userName = "Miss Melissa";
+let phoneNumber = "123-456-7890";
+
+phoneNumber = phoneNumber.replaceAll("-", "");
+
+console.log(userName.length);
+console.log(phoneNumber);
