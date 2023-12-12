@@ -90,10 +90,22 @@
 //  };
 
 // string properties and methods
-let userName = "Miss Melissa";
-let phoneNumber = "123-456-7890";
+// let userName = "Miss Melissa";
+// let phoneNumber = "123-456-7890";
 
-phoneNumber = phoneNumber.replaceAll("-", "");
+// phoneNumber = phoneNumber.replaceAll("-", "");
 
-console.log(userName.length);
-console.log(phoneNumber);
+// console.log(userName.length);
+// console.log(phoneNumber);
+
+// slice() extracts the section of a string and returns it as a new string without modifying the original string
+
+let fullName = "Blessing Awak";
+let firstName;
+let lastName;
+
+firstName = fullName.slice(0, 8);
+lastName = fullName.slice(8);
+
+console.log(lastName);
+console.log(firstName);
