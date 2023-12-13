@@ -122,27 +122,45 @@
 //   console.log("You are still a teenager.");
 // }
 
-document.getElementById("myButton").onclick = function () {
-  const myCheckBox = document.getElementById("myCheckBox");
-  const visaBtn = document.getElementById("visaBtn");
-  const mastercardBtn = document.getElementById("mastercardBtn");
-  const paypalBtn = document.getElementById("paypalBtn");
+// // check property
+// document.getElementById("myButton").onclick = function () {
+//   const myCheckBox = document.getElementById("myCheckBox");
+//   const visaBtn = document.getElementById("visaBtn");
+//   const mastercardBtn = document.getElementById("masterCardBtn");
+//   const paypalBtn = document.getElementById("paypalBtn");
 
-  if (myCheckBox.checked) {
-    console.log("You are subscribed");
-  } else {
-    console.log("You are NOT subscribed");
-  }
-  
-  if (visaBtn.checked) {
-    console.log("You are paying with a Visa!");
-  } else if (mastercardBtn.checked) {
-   console.log("You are paying with a Mastercard!");
-  }
-  else if (paypalBtn.checked) {
-   console.log("You are paying with a PayPal!");
-  }
-  else {
-    console.log("You must select a paymet type!");
-  }
-};
+//   if (myCheckBox.checked) {
+//     console.log("You are subscribed");
+//   } else {
+//     console.log("You are NOT subscribed");
+//   }
+
+//   if (visaBtn.checked) {
+//     console.log("You are paying with a Visa!");
+//   } else if (mastercardBtn.checked) {
+//    console.log("You are paying with a Mastercard!");
+//   }
+//   else if (paypalBtn.checked) {
+//    console.log("You are paying with a PayPal!");
+//   }
+//   else {
+//     console.log("You must select a paymet type!");
+//   }
+// };
+
+// switch
+let grade = "pizza";
+switch (grade) {
+  case "A":
+    console.log("You did great!");
+  case "B":
+    console.log("You did good!");
+  case "C":
+    console.log("You did okay!");
+  case "D":
+    console.log("You passed ... barely!");
+  case "F":
+    console.log("You FAILED!");
+  default:
+    console.log(grade, "is not a letter grade");
+}
