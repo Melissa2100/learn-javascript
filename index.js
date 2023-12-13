@@ -148,19 +148,27 @@
 //   }
 // };
 
-// switch
-let grade = "pizza";
-switch (grade) {
-  case "A":
-    console.log("You did great!");
-  case "B":
-    console.log("You did good!");
-  case "C":
-    console.log("You did okay!");
-  case "D":
-    console.log("You passed ... barely!");
-  case "F":
-    console.log("You FAILED!");
-  default:
-    console.log(grade, "is not a letter grade");
+// // switch
+// let grade = "pizza";
+// switch (grade) {
+//   case "A":
+//     console.log("You did great!");
+//   case "B":
+//     console.log("You did good!");
+//   case "C":
+//     console.log("You did okay!");
+//   case "D":
+//     console.log("You passed ... barely!");
+//   case "F":
+//     console.log("You FAILED!");
+//   default:
+//     console.log(grade, "is not a letter grade");
+// }
+
+// while loop
+let userName = "";
+
+while (userName == "") {
+  userName = window.prompt("Enter your name");
 }
+console.log("Hello", userName);
