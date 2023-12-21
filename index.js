@@ -189,7 +189,7 @@
 
 // console.log("HAPPY NEW YEAR!");
 
-// // break
+// // break - breaks out of a loop entirely
 // for (let i = 1; i <= 20; i += 1) {
 //   if (i == 13) {
 //     break;
@@ -197,10 +197,10 @@
 //   console.log(i);
 // }
 
-// continue
-for (let i = 1; i <= 20; i += 1) {
-  if (i == 13) {
-    continue;
-  }
-  console.log(i);
-}
+// // continue - it skips an iteration of a loop
+// for (let i = 1; i <= 20; i += 1) {
+//   if (i == 13) {
+//     continue;
+//   }
+//   console.log(i);
+// }
