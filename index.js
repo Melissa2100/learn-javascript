@@ -204,3 +204,8 @@
 //   }
 //   console.log(i);
 // }
+
+// nested loop
+for (let i = 1; i <= 3; i += 1) {
+  console.log(i);
+}
