@@ -173,11 +173,18 @@
 // }
 // console.log("Hello", userName);
 
-// do while loop
-let userName;
+// // do while loop
+// let userName;
 
-do {
-  userName = window.prompt("Enter your name");
-} while (userName == "");
+// do {
+//   userName = window.prompt("Enter your name");
+// } while (userName == "");
 
-console.log("Hello", userName);
+// console.log("Hello", userName);
+
+// for loop
+for (let i = 10; i > 0; i -= 1) {
+  console.log(i);
+}
+
+console.log("HAPPY NEW YEAR!");
