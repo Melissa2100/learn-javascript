@@ -182,9 +182,17 @@
 
 // console.log("Hello", userName);
 
-// for loop
-for (let i = 10; i > 0; i -= 1) {
+// // for loop
+// for (let i = 10; i > 0; i -= 1) {
+//   console.log(i);
+// }
+
+// console.log("HAPPY NEW YEAR!");
+
+// break
+for (let i = 1; i <= 20; i += 1) {
+  if (i == 13) {
+    break;
+  }
   console.log(i);
 }
-
-console.log("HAPPY NEW YEAR!");
