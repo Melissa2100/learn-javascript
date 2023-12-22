@@ -226,3 +226,12 @@
 //   let result = width * height;
 //   return result;
 // }
+
+//  tenary operator
+// condition ? exprIfTrue : exprIfFalse
+
+checkWinner(false);
+
+function checkWinner(win) {
+  win ? console.log("YOU WIN!") : console.log("YOU LOSE!");
+}
