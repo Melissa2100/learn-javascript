@@ -236,19 +236,34 @@
 //   win ? console.log("YOU WIN!") : console.log("YOU LOSE!");
 // }
 
-//  template literals
-let userName = "Bro";
-let items = 3;
-let total = 75;
+// //  template literals
+// let userName = "Bro";
+// let items = 3;
+// let total = 75;
 
 // console.log(`Hello, ${userName}!`);
 // console.log(`You have, ${items} items in your cart`);
 // console.log(`Your total is $${total}`)
 
-let text = `Hello ${userName}! <br>
-You have, ${items} items in your cart <br>
-Your total is $${total}.`;
+// let text = `Hello ${userName}! <br>
+// You have, ${items} items in your cart <br>
+// Your total is $${total}.`;
 
-// console.log(text);
+// // console.log(text);
 
-document.getElementById("myLabel").innerHTML = text;
+// document.getElementById("myLabel").innerHTML = text;
+
+// toLocaleString
+
+// number.toLocaleString(locale, {option});
+
+// 'locale' = specify that language (undefined = default set in)
+// 'option' = object with formatting options
+
+let myNum = 123456.789;
+
+myNum = myNum.toLocaleString("en-US"); // US English
+myNum = myNum.toLocaleString("hi-IN"); // Hindi
+myNum = myNum.toLocaleString("de-DE"); // standard German
+
+console.log(myNum);
