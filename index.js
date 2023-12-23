@@ -253,25 +253,26 @@
 
 // document.getElementById("myLabel").innerHTML = text;
 
-// toLocaleString
 
-// number.toLocaleString(locale, {option});
+// // toLocaleString
 
-// 'locale' = specify that language (undefined = default set in)
-// 'option' = object with formatting options
+// // number.toLocaleString(locale, {option});
 
-let myNum = 100;
+// // 'locale' = specify that language (undefined = default set in)
+// // 'option' = object with formatting options
 
-myNum = myNum.toLocaleString("en-US"); // US English
-myNum = myNum.toLocaleString("hi-IN"); // Hindi
-myNum = myNum.toLocaleString("de-DE"); // standard German
+// let myNum = 100;
 
-myNum = myNum.toLocaleString("en-US", { style: "currency", currency: "USD" });
-myNum = myNum.toLocaleString("hi-IN", { style: "currency", currency: "INR" });
-myNum = myNum.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
+// myNum = myNum.toLocaleString("en-US"); // US English
+// myNum = myNum.toLocaleString("hi-IN"); // Hindi
+// myNum = myNum.toLocaleString("de-DE"); // standard German
 
-myNum = myNum.toLocaleString(undefined, { style: "percent" });
+// myNum = myNum.toLocaleString("en-US", { style: "currency", currency: "USD" });
+// myNum = myNum.toLocaleString("hi-IN", { style: "currency", currency: "INR" });
+// myNum = myNum.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
 
-myNum = myNum.toLocaleString(undefined, { style: "unit", unit: "celsius" });
+// myNum = myNum.toLocaleString(undefined, { style: "percent" });
 
-console.log(myNum);
+// myNum = myNum.toLocaleString(undefined, { style: "unit", unit: "celsius" });
+
+// console.log(myNum);
