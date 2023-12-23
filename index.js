@@ -227,11 +227,20 @@
 //   return result;
 // }
 
-//  tenary operator
-// condition ? exprIfTrue : exprIfFalse
+// //  tenary operator
+// // condition ? exprIfTrue : exprIfFalse
 
-checkWinner(false);
+// checkWinner(false);
 
-function checkWinner(win) {
-  win ? console.log("YOU WIN!") : console.log("YOU LOSE!");
-}
+// function checkWinner(win) {
+//   win ? console.log("YOU WIN!") : console.log("YOU LOSE!");
+// }
+
+//  template literals
+let userName = "Bro";
+let items = 3;
+let total = 75;
+
+console.log(`Hello, ${userName}!`);
+console.log(`You have, ${items} items in your cart`);
+console.log(`Your total is $${total}`);
