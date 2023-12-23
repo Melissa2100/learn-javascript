@@ -245,8 +245,10 @@ let total = 75;
 // console.log(`You have, ${items} items in your cart`);
 // console.log(`Your total is $${total}`)
 
-let text = `Hello ${userName}!
-You have, ${items} items in your cart
+let text = `Hello ${userName}! <br>
+You have, ${items} items in your cart <br>
 Your total is $${total}.`;
 
-console.log(text);
+// console.log(text);
+
+document.getElementById("myLabel").innerHTML = text;
