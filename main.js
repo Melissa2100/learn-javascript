@@ -16,7 +16,7 @@
 
 // converting temp
 let temp = 32;
-temp = toCelsius(temp);
+temp = toFahrenheit(temp);
 console.log(temp);
 
 function toCelsius(temp) {
