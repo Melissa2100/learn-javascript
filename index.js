@@ -305,6 +305,9 @@
 //Array of string
 let fruits = ["banana", "apple", "orange", "mango"];
 
-for(let fruit of fruits) {
- console.log(fruit);
+// fruits = fruits.sort(); //alphabetical
+fruits = fruits.sort().reverse(); //reverse
+
+for (let fruit of fruits) {
+  console.log(fruit);
 }
