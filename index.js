@@ -276,14 +276,17 @@
 
 // console.log(myNum);
 
-// array
-let fruits = ["apple", "orange", "banana"];
+// // array
+// let fruits = ["apple", "orange", "banana"];
 
-// fruits[2] = "coconut";
+// // fruits[2] = "coconut";
 
-fruits.push("lemon"); //add an element
-fruits.pop(); //removes last element
-fruits.unshift("mango"); //add element to the beginning
-fruits.shift(); //removes first element
+// fruits.push("lemon"); //add an element
+// fruits.pop(); //removes last element
+// fruits.unshift("mango"); //add element to the beginning
+// fruits.shift(); //removes first element
 
-console.log(fruits);
+// let length = fruits.length;
+// let index = fruits.indexOf("apple");
+
+// console.log(index);
