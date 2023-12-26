@@ -253,7 +253,6 @@
 
 // document.getElementById("myLabel").innerHTML = text;
 
-
 // // toLocaleString
 
 // // number.toLocaleString(locale, {option});
@@ -276,3 +275,7 @@
 // myNum = myNum.toLocaleString(undefined, { style: "unit", unit: "celsius" });
 
 // console.log(myNum);
+
+// array
+let fruits = ["apple", "orange", "banana"];
+console.log(fruits);
