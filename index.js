@@ -320,6 +320,8 @@ let meats = ["eggs", "chickens", "fish"];
 
 let groceryList = [fruits, vegetables, meats];
 
+groceryList[2][0] = "steak";
+
 for (let list of groceryList) {
   for (let food of list) {
     console.log(food);
