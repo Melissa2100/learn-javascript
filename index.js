@@ -291,13 +291,20 @@
 
 // console.log(index);
 
-// looping through an array
-let prices = [5, 10, 15, 20, 25];
+// // looping through an array
+// let prices = [5, 10, 15, 20, 25];
 
-// for(let i = prices.length - 1; i >= 0; i-=1) {
-//  console.log(prices[i]);
+// // for(let i = prices.length - 1; i >= 0; i-=1) {
+// //  console.log(prices[i]);
+// // }
+
+// for (let price of prices) {
+//   console.log(price);
 // }
 
-for (let price of prices) {
-  console.log(price);
+//Array of string
+let fruits = ["banana", "apple", "orange", "mango"];
+
+for(let fruit of fruits) {
+ console.log(fruit);
 }
