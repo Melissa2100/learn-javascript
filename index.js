@@ -302,12 +302,26 @@
 //   console.log(price);
 // }
 
-//Array of string
-let fruits = ["banana", "apple", "orange", "mango"];
+// //Array of string
+// let fruits = ["banana", "apple", "orange", "mango"];
 
-// fruits = fruits.sort(); //alphabetical
-fruits = fruits.sort().reverse(); //reverse
+// // fruits = fruits.sort(); //alphabetical
+// fruits = fruits.sort().reverse(); //reverse
 
-for (let fruit of fruits) {
-  console.log(fruit);
+// for (let fruit of fruits) {
+//   console.log(fruit);
+// }
+
+// 2D Array = An Array of Arrays
+
+let fruits = ["apples", "oranges", "bananas"];
+let vegetables = ["carrots", "onions", "potatoes"];
+let meats = ["eggs", "chickens", "fish"];
+
+let groceryList = [fruits, vegetables, meats];
+
+for (let list of groceryList) {
+  for (let food of list) {
+    console.log(food);
+  }
 }
