@@ -357,28 +357,38 @@
 //   return total;
 // }
 
-// callback
-// method 1
-// let total = sum(2, 3);
-// displayDOM(total);
+// // callback
+// // method 1
+// // let total = sum(2, 3);
+// // displayDOM(total);
 
-// function sum(x, y) {
+// // function sum(x, y) {
+// //   let result = x + y;
+// //   return result;
+// // }
+
+// // method 2
+// sum(2, 3, displayDOM);
+
+// function sum(x, y, doSomething) {
 //   let result = x + y;
-//   return result;
+//   doSomething(result);
 // }
 
-// method 2
-sum(2, 3, displayDOM);
+// function displayConsole(output) {
+//   console.log(output);
+// }
 
-function sum(x, y, doSomething) {
-  let result = x + y;
-  doSomething(result);
+// function displayDOM(output) {
+//   document.getElementById("myLabel").innerHTML = output;
+// }
+
+// array.forEach()
+let students = ["charles", "blessing", "love"];
+students.forEach(capitalize);
+
+function capitalize(element, index, array) {
+  array[index] = element[0].toUpperCase() + element.substring(1 );
 }
 
-function displayConsole(output) {
-  console.log(output);
-}
-
-function displayDOM(output) {
-  document.getElementById("myLabel").innerHTML = output;
-}
+console.log(students[0]);
