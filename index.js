@@ -312,18 +312,30 @@
 //   console.log(fruit);
 // }
 
-// 2D Array = An Array of Arrays
+// // 2D Array = An Array of Arrays
 
-let fruits = ["apples", "oranges", "bananas"];
-let vegetables = ["carrots", "onions", "potatoes"];
-let meats = ["eggs", "chickens", "fish"];
+// let fruits = ["apples", "oranges", "bananas"];
+// let vegetables = ["carrots", "onions", "potatoes"];
+// let meats = ["eggs", "chickens", "fish"];
 
-let groceryList = [fruits, vegetables, meats];
+// let groceryList = [fruits, vegetables, meats];
 
-groceryList[2][0] = "steak";
+// groceryList[2][0] = "steak";
 
-for (let list of groceryList) {
-  for (let food of list) {
-    console.log(food);
-  }
-}
+// for (let list of groceryList) {
+//   for (let food of list) {
+//     console.log(food);
+//   }
+// }
+
+// spread operator
+/* let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let maximum = Math.min(...numbers);
+console.log(maximum); */
+
+let class1 = ["Blessing", "Joy", "Hope"];
+let class2 = ["Precious", "Charles", "Fidel"];
+
+class1.push(...class2);
+console.log(...class1);
