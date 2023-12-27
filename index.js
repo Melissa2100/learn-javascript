@@ -328,14 +328,31 @@
 //   }
 // }
 
-// spread operator
-/* let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// // spread operator
+// /* let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-let maximum = Math.min(...numbers);
-console.log(maximum); */
+// let maximum = Math.min(...numbers);
+// console.log(maximum); */
 
-let class1 = ["Blessing", "Joy", "Hope"];
-let class2 = ["Precious", "Charles", "Fidel"];
+// let class1 = ["Blessing", "Joy", "Hope"];
+// let class2 = ["Precious", "Charles", "Fidel"];
 
-class1.push(...class2);
-console.log(...class1);
+// class1.push(...class2);
+// console.log(...class1);
+
+// rest paprameters
+let a = 1;
+let b = 2;
+let c = 3;
+let d = 4;
+let e = 5;
+
+console.log(sum(a, b, c, d, e));
+
+function sum(...numbers) {
+  let total = 0;
+  for (number of numbers) {
+    total += number;
+  }
+  return total;
+}
