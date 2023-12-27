@@ -340,19 +340,36 @@
 // class1.push(...class2);
 // console.log(...class1);
 
-// rest paprameters
-let a = 1;
-let b = 2;
-let c = 3;
-let d = 4;
-let e = 5;
+// // rest paprameters
+// let a = 1;
+// let b = 2;
+// let c = 3;
+// let d = 4;
+// let e = 5;
 
-console.log(sum(a, b, c, d, e));
+// console.log(sum(a, b, c, d, e));
 
-function sum(...numbers) {
-  let total = 0;
-  for (number of numbers) {
-    total += number;
-  }
-  return total;
+// function sum(...numbers) {
+//   let total = 0;
+//   for (number of numbers) {
+//     total += number;
+//   }
+//   return total;
+// }
+
+// callback
+let total = sum(2, 3);
+displayDOM(total);
+
+function sum(x, y) {
+  let result = x + y;
+  return result;
+}
+
+function displayConsole(output) {
+  console.log(output);
+}
+
+function displayDOM(output) {
+  document.getElementById("myLabel").innerHTML = output;
 }
