@@ -358,12 +358,21 @@
 // }
 
 // callback
-let total = sum(2, 3);
-displayDOM(total);
+// method 1
+// let total = sum(2, 3);
+// displayDOM(total);
 
-function sum(x, y) {
+// function sum(x, y) {
+//   let result = x + y;
+//   return result;
+// }
+
+// method 2
+sum(2, 3, displayDOM);
+
+function sum(x, y, doSomething) {
   let result = x + y;
-  return result;
+  doSomething(result);
 }
 
 function displayConsole(output) {
