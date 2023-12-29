@@ -420,16 +420,26 @@
 //   console.log(element);
 // }
 
-// array.filter
-let ages = [18, 21, 16, 17, 19, 30];
-let adults = ages.filter(checkAge);
+// // array.filter
+// let ages = [18, 21, 16, 17, 19, 30];
+// let adults = ages.filter(checkAge);
 
-adults.forEach(print);
+// adults.forEach(print);
 
-function checkAge(element) {
-  return element >= 18;
-}
+// function checkAge(element) {
+//   return element >= 18;
+// }
 
-function print(element) {
-  console.log(element);
+// function print(element) {
+//   console.log(element);
+// }
+
+// array.reduce
+let prices = [5, 10, 15, 20, 25, 30];
+total = prices.reduce(checkOut);
+
+console.log(`The total is: $${total}`);
+
+function checkOut(total, element) {
+  return total + element;
 }
