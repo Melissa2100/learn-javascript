@@ -434,12 +434,27 @@
 //   console.log(element);
 // }
 
-// array.reduce
-let prices = [5, 10, 15, 20, 25, 30];
-total = prices.reduce(checkOut);
+// // array.reduce
+// let prices = [5, 10, 15, 20, 25, 30];
+// total = prices.reduce(checkOut);
 
-console.log(`The total is: $${total}`);
+// console.log(`The total is: $${total}`);
 
-function checkOut(total, element) {
-  return total + element;
+// function checkOut(total, element) {
+//   return total + element;
+// }
+
+// array.sort
+let grades = [100, 50, 90, 60, 80, 70];
+
+grades = grades.sort(descendingSort);
+
+grades.forEach(print);
+
+function descendingSort(x, y) {
+  return y - x;
+}
+
+function print(element) {
+  console.log(element);
 }
