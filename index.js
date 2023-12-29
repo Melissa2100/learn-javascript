@@ -444,17 +444,29 @@
 //   return total + element;
 // }
 
-// array.sort
-let grades = [100, 50, 90, 60, 80, 70];
+// // array.sort
+// let grades = [100, 50, 90, 60, 80, 70];
 
-grades = grades.sort(descendingSort);
+// grades = grades.sort(descendingSort);
 
-grades.forEach(print);
+// grades.forEach(print);
 
-function descendingSort(x, y) {
-  return y - x;
+// function descendingSort(x, y) {
+//   return y - x;
+// }
+
+// function print(element) {
+//   console.log(element);
+// }
+
+// function expression
+let count = 0;
+function increaseCount() {
+  count += 1;
+  document.getElementById("myLabel").innerHTML = count;
 }
 
-function print(element) {
-  console.log(element);
+function decreaseCount() {
+  count -= 1;
+  document.getElementById("myLabel").innerHTML = count;
 }
