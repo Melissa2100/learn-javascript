@@ -398,22 +398,36 @@
 //   console.log(element);
 // }
 
-// array.map
-let numbers = [1, 2, 3, 4, 5];
+// // array.map
+// let numbers = [1, 2, 3, 4, 5];
 // let squares = numbers.map(square);
 
-let cubes = numbers.map(cube);
+// let cubes = numbers.map(cube);
 
 // squares.forEach(print);
 
-cubes.forEach(print);
+// cubes.forEach(print);
 
 // function square(element) {
 //   return Math.pow(element, 2);
 // }
 
-function cube(element) {
-  return Math.pow(element, 3);
+// function cube(element) {
+//   return Math.pow(element, 3);
+// }
+
+// function print(element) {
+//   console.log(element);
+// }
+
+// array.filter
+let ages = [18, 21, 16, 17, 19, 30];
+let adults = ages.filter(checkAge);
+
+adults.forEach(print);
+
+function checkAge(element) {
+  return element >= 18;
 }
 
 function print(element) {
