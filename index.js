@@ -477,6 +477,11 @@
 
 // greeting("my Love");
 
-const percent = (x, y) => (x / y) * 100;
+// const percent = (x, y) => (x / y) * 100;
 
-console.log(`${percent(37, 50)}%`);
+// console.log(`${percent(37, 50)}%`);
+
+let grades = [100, 50, 90, 70, 60, 80];
+
+grades.sort((x, y) => y - x);
+grades.forEach((element) => console.log(element));
