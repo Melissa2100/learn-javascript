@@ -473,6 +473,10 @@
 // };
 
 // arrow function
-const greeting = (userName) => console.log(`Hello ${userName}`);
+// const greeting = userName => console.log(`Hello ${userName}`);
 
-greeting("my Love");
+// greeting("my Love");
+
+const percent = (x, y) => (x / y) * 100;
+
+console.log(`${percent(37, 50)}%`);
