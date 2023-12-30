@@ -459,24 +459,20 @@
 //   console.log(element);
 // }
 
-// function expression
-let count = 0;
+// // function expression
+// let count = 0;
 
-document.getElementById("increaseButton").onclick = function () {
-  count += 1;
-  document.getElementById("myLabel").innerHTML = count;
-};
-
-document.getElementById("decreaseButton").onclick = function () {
-  count -= 1;
-  document.getElementById("myLabel").innerHTML = count;
-};
-// function increaseCount() {
+// document.getElementById("increaseButton").onclick = function () {
 //   count += 1;
 //   document.getElementById("myLabel").innerHTML = count;
-// }
+// };
 
-// function decreaseCount() {
+// document.getElementById("decreaseButton").onclick = function () {
 //   count -= 1;
 //   document.getElementById("myLabel").innerHTML = count;
-// }
+// };
+
+// arrow function
+const greeting = (userName) => console.log(`Hello ${userName}`);
+
+greeting("my Love");
