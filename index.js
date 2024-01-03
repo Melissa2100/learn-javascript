@@ -486,24 +486,41 @@
 // grades.sort((x, y) => y - x);
 // grades.forEach((element) => console.log(element));
 
-// shuffle elements of an Array
-let cards = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+// // shuffle elements of an Array
+// let cards = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 
-// to shuffle the cards
-shuffle(cards);
+// // to shuffle the cards
+// shuffle(cards);
 
 // console.log(cards[0]);
-cards.forEach((card) => console.log(card));
+// cards.forEach((card) => console.log(card));
 
-function shuffle(array) {
-  let currentIndex = array.length;
+// function shuffle(array) {
+//   let currentIndex = array.length;
 
-  while (currentIndex != 0) {
-    let randomIndex = Math.floor(Math.random() * array.length);
-    currentIndex -= 1;
+//   while (currentIndex != 0) {
+//     let randomIndex = Math.floor(Math.random() * array.length);
+//     currentIndex -= 1;
 
-    let temp = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temp;
+//     let temp = array[currentIndex];
+//     array[currentIndex] = array[randomIndex];
+//     array[randomIndex] = temp;
+//   }
+// }
+
+// nested function
+let userName = "Charles";
+let userInbox = 0;
+
+login();
+
+function login() {
+  displayUserName();
+  displayUserInbox();
+  function displayUserName() {
+    console.log(`Welcome ${userName}`);
+  }
+  function displayUserInbox() {
+    console.log(`You have ${userInbox} new messages`);
   }
 }
