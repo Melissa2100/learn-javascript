@@ -598,30 +598,54 @@
 // car2.drive();
 // car2.brake();
 
-// this
-const car1 = {
-  //properties
-  model: "Mustang",
-  color: "red",
-  year: 2023,
+// // this
+// const car1 = {
+//   //properties
+//   model: "Mustang",
+//   color: "red",
+//   year: 2023,
 
-  //methods
-  drive: function () {
-    console.log(`You drive the ${this.model}`);
-  },
-};
+//   //methods
+//   drive: function () {
+//     console.log(`You drive the ${this.model}`);
+//   },
+// };
 
-const car2 = {
-  //properties
-  model: "Corvette",
-  color: "blue",
-  year: 2024,
+// const car2 = {
+//   //properties
+//   model: "Corvette",
+//   color: "blue",
+//   year: 2024,
 
-  //methods
-  drive: function () {
-    console.log(`You drive the ${this.model}`);
-  },
-};
+//   //methods
+//   drive: function () {
+//     console.log(`You drive the ${this.model}`);
+//   },
+// };
 
-car1.drive();
-car2.drive();
+// car1.drive();
+// car2.drive();
+
+//class
+class player {
+  score = 0;
+
+  pause() {
+    console.log("You paused the game");
+  }
+
+  exit() {
+    console.log("You exited the game");
+  }
+}
+
+const player1 = new player();
+const player2 = new player();
+
+player1.score += 1;
+
+console.log(player1.score);
+console.log(player2.score);
+
+player1.pause();
+player2.exit();
