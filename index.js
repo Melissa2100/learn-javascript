@@ -709,7 +709,7 @@ class Animal {
     console.log(`This ${this.name} is sleeping`);
   }
 }
-class rabbit extends Animal {
+class Rabbit extends Animal {
   name = "rabbit";
 
   run() {
@@ -717,7 +717,7 @@ class rabbit extends Animal {
   }
 }
 
-class fish extends Animal {
+class Fish extends Animal {
   name = "fish";
 
   swim() {
@@ -725,10 +725,29 @@ class fish extends Animal {
   }
 }
 
-class hawk extends Animal {
+class Hawk extends Animal {
   name = "hawk";
 
   fly() {
-    console.log(`This ${this.name} is flyinging`);
+    console.log(`This ${this.name} is flying`);
   }
 }
+
+const rabbit = new Rabbit();
+const fish = new Fish();
+const hawk = new Hawk();
+
+console.log(rabbit.alive);
+rabbit.eat();
+rabbit.sleep();
+rabbit.run();
+
+console.log(fish.swim());
+fish.eat();
+fish.sleep();
+fish.swim();
+
+console.log(hawk.fly());
+hawk.eat();
+hawk.sleep();
+hawk.fly();
