@@ -650,29 +650,46 @@
 // player1.pause();
 // player2.exit();
 
-// constructor
-class student {
-  constructor(name, age, gpa) {
-    this.name = name;
-    this.age = age;
-    this.gpa = gpa;
-  }
-  study() {
-    console.log(`${this.name} is studying`);
+// // constructor
+// class student {
+//   constructor(name, age, gpa) {
+//     this.name = name;
+//     this.age = age;
+//     this.gpa = gpa;
+//   }
+//   study() {
+//     console.log(`${this.name} is studying`);
+//   }
+// }
+
+// const student1 = new student("Charles", 29, 4.16);
+// const student2 = new student("Blessing", 29, 3.88);
+
+// console.log(student1.name);
+// console.log(student1.age);
+// console.log(student1.gpa);
+
+// student1.study();
+
+// console.log(student2.name);
+// console.log(student2.age);
+// console.log(student2.gpa);
+
+// student2.study();
+
+// static
+class Car {
+  numberOfCars = 0;
+  constructor(model) {
+    this.model = model;
+    this.numberOfCars += 1;
   }
 }
 
-const student1 = new student("Charles", 29, 4.16);
-const student2 = new student("Blessing", 29, 3.88);
+const car1 = new Car("Mustang");
+const car2 = new Car("Corvette");
+const car3 = new Car("BMW");
 
-console.log(student1.name);
-console.log(student1.age);
-console.log(student1.gpa);
-
-student1.study();
-
-console.log(student2.name);
-console.log(student2.age);
-console.log(student2.gpa);
-
-student2.study();
+console.log(car1.numberOfCars);
+console.log(car2.numberOfCars);
+console.log(car3.numberOfCars);
