@@ -679,10 +679,13 @@
 
 // static
 class Car {
-  numberOfCars = 0;
+  static numberOfCars = 0;
   constructor(model) {
     this.model = model;
-    this.numberOfCars += 1;
+    Car.numberOfCars += 1;
+  }
+  static startRace() {
+    console.log("3...2...1...GO!");
   }
 }
 
@@ -690,6 +693,6 @@ const car1 = new Car("Mustang");
 const car2 = new Car("Corvette");
 const car3 = new Car("BMW");
 
-console.log(car1.numberOfCars);
-console.log(car2.numberOfCars);
-console.log(car3.numberOfCars);
+console.log(Car.numberOfCars);
+
+Car.startRace();
