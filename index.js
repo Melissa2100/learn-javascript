@@ -698,9 +698,8 @@
 // Car.startRace();
 
 // inheritance
-class rabbit {
+class Animal {
   alive = true;
-  name = "rabbit";
 
   eat() {
     console.log(`This ${this.name} is eating`);
@@ -709,40 +708,25 @@ class rabbit {
   sleep() {
     console.log(`This ${this.name} is sleeping`);
   }
+}
+class rabbit extends Animal {
+  name = "rabbit";
 
   run() {
     console.log(`This ${this.name} is running`);
   }
 }
 
-class fish {
-  alive = true;
+class fish extends Animal {
   name = "fish";
-
-  eat() {
-    console.log(`This ${this.name} is eating`);
-  }
-
-  sleep() {
-    console.log(`This ${this.name} is sleeping`);
-  }
 
   swim() {
     console.log(`This ${this.name} is swimming`);
   }
 }
 
-class hawk {
-  alive = true;
+class hawk extends Animal {
   name = "hawk";
-
-  eat() {
-    console.log(`This ${this.name} is eating`);
-  }
-
-  sleep() {
-    console.log(`This ${this.name} is sleeping`);
-  }
 
   fly() {
     console.log(`This ${this.name} is flyinging`);
