@@ -508,21 +508,32 @@
 //   }
 // }
 
-// nested function
-let userName = "Charles";
-let userInbox = 0;
+// // nested function
+// let userName = "Charles";
+// let userInbox = 0;
 
-login();
+// login();
 
-function login() {
-  displayUserName();
-  displayUserInbox();
+// function login() {
+//   displayUserName();
+//   displayUserInbox();
 
-  function displayUserName() {
-    console.log(`Welcome ${userName}`);
-  }
+//   function displayUserName() {
+//     console.log(`Welcome ${userName}`);
+//   }
 
-  function displayUserInbox() {
-    console.log(`You have ${userInbox} new messages`);
-  }
-}
+//   function displayUserInbox() {
+//     console.log(`You have ${userInbox} new messages`);
+//   }
+// }
+
+//Map
+
+const store = new Map([
+  ["t-shirt", 20],
+  ["jeans", 30],
+  ["socks", 10],
+  ["underwear", 50],
+]);
+
+store.forEach((value, key) => console.log(`${key} $${value}`));
