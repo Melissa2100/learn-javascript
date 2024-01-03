@@ -550,8 +550,55 @@
 
 // store.forEach((value, key) => console.log(`${key} $${value}`));
 
-// object
+// // object
 
+// const car1 = {
+//   properties
+//   model: "Mustang",
+//   color: "red",
+//   year: 2023,
+
+//    methods
+//   drive: function () {
+//     console.log("You drive the car");
+//   },
+
+//   brake: function () {
+//     console.log("You step on the brakes");
+//   },
+// };
+
+// console.log(car1.model);
+// console.log(car1.color);
+// console.log(car1.year);
+
+// car1.drive();
+// car1.brake();
+
+// const car2 = {
+//   properties
+//   model: "Corvette",
+//   color: "blue",
+//   year: 2024,
+
+//   methods
+//   drive: function () {
+//     console.log("You drive the car");
+//   },
+
+//   brake: function () {
+//     console.log("You step on the brakes");
+//   },
+// };
+
+// console.log(car2.model);
+// console.log(car2.color);
+// console.log(car2.year);
+
+// car2.drive();
+// car2.brake();
+
+// this
 const car1 = {
   //properties
   model: "Mustang",
@@ -560,20 +607,9 @@ const car1 = {
 
   //methods
   drive: function () {
-    console.log("You drive the car");
-  },
-
-  brake: function () {
-    console.log("You step on the brakes");
+    console.log(`You drive the ${this.model}`);
   },
 };
-
-console.log(car1.model);
-console.log(car1.color);
-console.log(car1.year);
-
-car1.drive();
-car1.brake();
 
 const car2 = {
   //properties
@@ -583,17 +619,9 @@ const car2 = {
 
   //methods
   drive: function () {
-    console.log("You drive the car");
-  },
-
-  brake: function () {
-    console.log("You step on the brakes");
+    console.log(`You drive the ${this.model}`);
   },
 };
 
-console.log(car2.model);
-console.log(car2.color);
-console.log(car2.year);
-
+car1.drive();
 car2.drive();
-car2.brake();
