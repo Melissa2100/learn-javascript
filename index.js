@@ -626,26 +626,53 @@
 // car1.drive();
 // car2.drive();
 
-//class
-class player {
-  score = 0;
+// //class
+// class player {
+//   score = 0;
 
-  pause() {
-    console.log("You paused the game");
+//   pause() {
+//     console.log("You paused the game");
+//   }
+
+//   exit() {
+//     console.log("You exited the game");
+//   }
+// }
+
+// const player1 = new player();
+// const player2 = new player();
+
+// player1.score += 1;
+
+// console.log(player1.score);
+// console.log(player2.score);
+
+// player1.pause();
+// player2.exit();
+
+// constructor
+class student {
+  constructor(name, age, gpa) {
+    this.name = name;
+    this.age = age;
+    this.gpa = gpa;
   }
-
-  exit() {
-    console.log("You exited the game");
+  study() {
+    console.log(`${this.name} is studying`);
   }
 }
 
-const player1 = new player();
-const player2 = new player();
+const student1 = new student("Charles", 29, 4.16);
+const student2 = new student("Blessing", 29, 3.88);
 
-player1.score += 1;
+console.log(student1.name);
+console.log(student1.age);
+console.log(student1.gpa);
 
-console.log(player1.score);
-console.log(player2.score);
+student1.study();
 
-player1.pause();
-player2.exit();
+console.log(student2.name);
+console.log(student2.age);
+console.log(student2.gpa);
+
+student2.study();
