@@ -536,4 +536,16 @@ const store = new Map([
   ["underwear", 50],
 ]);
 
+let shoppingCart = 0;
+shoppingCart += store.get("t-shirt");
+shoppingCart += store.get("underwear");
+
+console.log(shoppingCart);
+
+store.set("hat", 40); //adds item
+store.delete("t-shirt"); // removes an item
+console.log(store.has("t-shirt")); //to check for availability returns boolean
+console.log(store.has("underwear"));
+console.log(store.size);
+
 store.forEach((value, key) => console.log(`${key} $${value}`));
