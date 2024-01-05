@@ -752,38 +752,55 @@
 // hawk.sleep();
 // hawk.fly();
 
-// super
-class Animal {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
+// // super
+// class Animal {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+// }
+// class Rabbit extends Animal {
+//   constructor(name, age, runSpeed) {
+//     super(name, age);
+//     this.runSpeed = runSpeed;
+//   }
+// }
+
+// class Fish extends Animal {
+//   constructor(name, age, swimSpeed) {
+//     super(name, age);
+//     this.swimSpeed = swimSpeed;
+//   }
+// }
+
+// class Hawk extends Animal {
+//   constructor(name, age, flySpeed) {
+//     super(name, age);
+//     this.runSpeed = flySpeed;
+//   }
+// }
+
+// const rabbit = new Rabbit("rabbit", 2, 40);
+// const fish = new Fish("fish", 2, 80);
+// const hawk = new Hawk("hawk", 3, 400);
+
+// console.log(rabbit.name);
+// console.log(rabbit.age);
+// console.log(rabbit.runSpeed);
+
+// array of object
+class Car {
+  constructor(model, year, color) {
+    this.model = model;
+    this.year = year;
+    this.color = color;
   }
-}
-class Rabbit extends Animal {
-  constructor(name, age, runSpeed) {
-    super(name, age);
-    this.runSpeed = runSpeed;
+
+  drive() {
+    console.log(`You drive the ${this.model}`);
   }
 }
 
-class Fish extends Animal {
-  constructor(name, age, swimSpeed) {
-    super(name, age);
-    this.swimSpeed = swimSpeed;
-  }
-}
-
-class Hawk extends Animal {
-  constructor(name, age, flySpeed) {
-    super(name, age);
-    this.runSpeed = flySpeed;
-  }
-}
-
-const rabbit = new Rabbit("rabbit", 2, 40);
-const fish = new Fish("fish", 2, 80);
-const hawk = new Hawk("hawk", 3, 400);
-
-console.log(rabbit.name);
-console.log(rabbit.age);
-console.log(rabbit.runSpeed);
+const car1 = new Car("Mustang", 2023, "red");
+const car2 = new Car("Corvette", 2024, "blue");
+const car3 = new Car("Lambo", 2022, "yellow");
