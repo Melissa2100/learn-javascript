@@ -820,10 +820,10 @@ class Car {
     this._power = power;
   }
   get power() {
-    return this._power;
+    return `${this._power}hp`;
   }
 }
 
 let car = new Car(400);
 
-console.log(car._power);
+console.log(car.power);
