@@ -843,28 +843,30 @@
 // console.log(car.power);
 // console.log(car.gas);
 
-// passing object to a function as an argument
-class Car {
-  constructor(model, year, color) {
-    this.model = model;
-    this.year = year;
-    this.color = color;
-  }
-}
+// // passing object to a function as an argument
+// class Car {
+//   constructor(model, year, color) {
+//     this.model = model;
+//     this.year = year;
+//     this.color = color;
+//   }
+// }
 
-const car1 = new Car("Mustang", 2023, "red");
-const car2 = new Car("Corvette", 2024, "blue");
-const car3 = new Car("Lambo", 2022, "yellow");
+// const car1 = new Car("Mustang", 2023, "red");
+// const car2 = new Car("Corvette", 2024, "blue");
+// const car3 = new Car("Lambo", 2022, "yellow");
 
-changeColor(car3, "purple");
-displayInfo(car3);
+// changeColor(car3, "purple");
+// displayInfo(car3);
 
-function displayInfo(car) {
-  console.log(car.model);
-  console.log(car.year);
-  console.log(car.color);
-}
+// function displayInfo(car) {
+//   console.log(car.model);
+//   console.log(car.year);
+//   console.log(car.color);
+// }
 
-function changeColor(car, color) {
-  car.color = color;
-}
+// function changeColor(car, color) {
+//   car.color = color;
+// }
+
+
