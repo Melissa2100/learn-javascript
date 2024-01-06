@@ -814,31 +814,46 @@
 // cars[1].drive();
 // cars[2].drive();
 
-// get and set
+// // get and set
+// class Car {
+//   constructor(power) {
+//     this._gas = 50;
+//     this._power = power;
+//   }
+//   get power() {
+//     return `${this._power}hp`;
+//   }
+//   get gas() {
+//     return `${this._gas}L (${(this._gas / 50) * 100}%)`;
+//   }
+//   set gas(value) {
+//     if (value > 50) {
+//       value = 50;
+//     } else if (value < 0) {
+//       value = 0;
+//     }
+//     this._gas = value;
+//   }
+// }
+
+// let car = new Car(400);
+
+// car.gas = 100;
+
+// console.log(car.power);
+// console.log(car.gas);
+
+// passing object to a function as an argument
 class Car {
-  constructor(power) {
-    this._gas = 50;
-    this._power = power;
-  }
-  get power() {
-    return `${this._power}hp`;
-  }
-  get gas() {
-    return `${this._gas}L (${(this._gas / 50) * 100}%)`;
-  }
-  set gas(value) {
-    if (value > 50) {
-      value = 50;
-    } else if (value < 0) {
-      value = 0;
-    }
-    this._gas = value;
+  constructor(model, year, color) {
+    this.model = model;
+    this.year = year;
+    this.color = color;
   }
 }
 
-let car = new Car(400);
+const car1 = new Car("Mustang", 2023, "red");
+const car2 = new Car("Corvette", 2024, "blue");
+const car3 = new Car("Lambo", 2022, "yellow");
 
-car.gas = 100;
-
-console.log(car.power);
-console.log(car.gas);
+function
