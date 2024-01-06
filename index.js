@@ -820,7 +820,7 @@ class Car {
     this._power = power;
   }
   get power() {
-    return this.power;
+    return this._power;
   }
 }
 
