@@ -789,27 +789,41 @@
 // console.log(rabbit.runSpeed);
 
 // array of object
-class Car {
-  constructor(model, year, color) {
-    this.model = model;
-    this.year = year;
-    this.color = color;
-  }
+// class Car {
+//   constructor(model, year, color) {
+//     this.model = model;
+//     this.year = year;
+//     this.color = color;
+//   }
 
-  drive() {
-    console.log(`You drive the ${this.model}`);
+//   drive() {
+//     console.log(`You drive the ${this.model}`);
+//   }
+// }
+
+// const car1 = new Car("Mustang", 2023, "red");
+// const car2 = new Car("Corvette", 2024, "blue");
+// const car3 = new Car("Lambo", 2022, "yellow");
+
+// const cars = [car1, car2, car3];
+// console.log(cars[0].year);
+// console.log(cars[1].year);
+// console.log(cars[2].year);
+
+// cars[0].drive();
+// cars[1].drive();
+// cars[2].drive();
+
+// get
+class Car {
+  constructor(power) {
+    this._power = power;
+  }
+  get power() {
+    return this.power;
   }
 }
 
-const car1 = new Car("Mustang", 2023, "red");
-const car2 = new Car("Corvette", 2024, "blue");
-const car3 = new Car("Lambo", 2022, "yellow");
+let car = new Car(400);
 
-const cars = [car1, car2, car3];
-console.log(cars[0].year);
-console.log(cars[1].year);
-console.log(cars[2].year);
-
-cars[0].drive();
-cars[1].drive();
-cars[2].drive();
+console.log(car._power);
