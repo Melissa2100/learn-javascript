@@ -814,7 +814,7 @@
 // cars[1].drive();
 // cars[2].drive();
 
-// get
+// get and set
 class Car {
   constructor(power) {
     this._gas = 50;
@@ -838,7 +838,7 @@ class Car {
 
 let car = new Car(400);
 
-car.gas = -100;
+car.gas = 100;
 
 console.log(car.power);
 console.log(car.gas);
