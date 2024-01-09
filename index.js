@@ -887,3 +887,16 @@ const car2 = new Car("Corvette", 2024, "blue");
 const car3 = new Car("Lambo", 2022, "yellow");
 
 const cars = [car1, car2, car3];
+
+// cars[0].drive();
+// cars[1].drive();
+// cars[2].drive();
+
+// a function to loop over the element of the array "const cars = []" and invoke the drive() method of each element.
+startRace(cars);
+
+function startRace(cars) {
+  for (const car of cars) {
+    car.drive();
+  }
+}
