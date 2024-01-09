@@ -885,8 +885,9 @@ class Car {
 const car1 = new Car("Mustang", 2023, "red");
 const car2 = new Car("Corvette", 2024, "blue");
 const car3 = new Car("Lambo", 2022, "yellow");
+const car4 = new Car("Ferrari", 2025, "white");
 
-const cars = [car1, car2, car3];
+const cars = [car1, car2, car3, car4];
 
 // cars[0].drive();
 // cars[1].drive();
