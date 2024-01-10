@@ -935,4 +935,6 @@ try {
   console.log(`${x} is a number`);
 } catch (error) {
   console.log(error);
+} finally {
+  console.log("This always execute");
 }
