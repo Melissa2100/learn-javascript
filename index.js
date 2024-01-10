@@ -924,17 +924,32 @@
 
 // cards.forEach((card) => console.log(`${card.value} ${card.suit}`));
 
-// error
-try {
-  let x = window.prompt("Enter a number");
-  x = Number(x);
+// // error
+// try {
+//   let x = window.prompt("Enter a number");
+//   x = Number(x);
 
-  if (isNaN(x)) throw "That wasn't a Number!";
-  if (x == "") throw "That was empty";
+//   if (isNaN(x)) throw "That wasn't a Number!";
+//   if (x == "") throw "That was empty";
 
-  console.log(`${x} is a number`);
-} catch (error) {
-  console.log(error);
-} finally {
-  console.log("This always execute");
+//   console.log(`${x} is a number`);
+// } catch (error) {
+//   console.log(error);
+// } finally {
+//   console.log("This always execute");
+// }
+
+// setTimeout()
+setTimeout(firstMessage, 3000);
+setTimeout(secondMessage, 6000);
+setTimeout(thirdMessage, 9000);
+
+function firstMessage() {
+  alert(`Buy this course for $500`);
+}
+function secondMessage() {
+  alert(`This is not a scam`);
+}
+function thirdMessage() {
+  alert(`DO IT!`);
 }
