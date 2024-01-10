@@ -961,3 +961,5 @@ document.getElementById("myButton").onclick = function () {
   clearTimeout(timer3);
   alert(`Thanks for buying <3`);
 };
+
+
