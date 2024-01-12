@@ -962,18 +962,32 @@
 //   alert(`Thanks for buying <3`);
 // };
 
-// setInterval
-let count = 0;
-let max = window.prompt("Count up to what #?");
-max = Number(max);
+// // setInterval
+// let count = 0;
+// let max = window.prompt("Count up to what #?");
+// max = Number(max);
 
-const myTimer = setInterval(countUp, 1000);
+// const myTimer = setInterval(countUp, 1000);
 
-function countUp() {
-  count += 1;
-  console.log(count);
+// function countUp() {
+//   count += 1;
+//   console.log(count);
 
-  if (count >= max) {
-    clearInterval(myTimer);
-  }
+//   if (count >= max) {
+//     clearInterval(myTimer);
+//   }
+// }
+
+// date object
+let date = new Date();
+
+// date = date.toLocaleString();
+document.getElementById("myLabel").innerHTML = formatDate(date);
+
+function formatDate(date) {
+  let year = date.getFullYear();
+  let month = date.getMonth() + 1;
+  let day = date.getDate();
+
+  return `${month}/${day}/${year}`;
 }
