@@ -982,7 +982,7 @@
 let date = new Date();
 
 // date = date.toLocaleString();
-document.getElementById("myLabel").innerHTML = formatDate(date);
+document.getElementById("myLabel").innerHTML = formatTime(date);
 
 function formatDate(date) {
   let year = date.getFullYear();
@@ -990,4 +990,12 @@ function formatDate(date) {
   let day = date.getDate();
 
   return `${month}/${day}/${year}`;
+}
+
+function formatTime(date) {
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let seconds = date.getSeconds();
+
+  return `${hours}:${minutes}:${seconds}`;
 }
