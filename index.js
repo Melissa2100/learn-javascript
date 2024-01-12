@@ -996,6 +996,9 @@ function formatTime(date) {
   let hours = date.getHours();
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
+  let amOrPm = hours >= 12 ? "pm" : "am";
 
-  return `${hours}:${minutes}:${seconds}`;
+  hours = hours % 12 || 12; //converts time from military to standard
+
+  return `${hours}:${minutes}:${seconds} ${amOrPm}`;
 }
