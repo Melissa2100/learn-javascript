@@ -1101,3 +1101,5 @@
 
 // let area = MathUtil.getArea(10)
 // console.log(area);
+
+// DOM
