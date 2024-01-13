@@ -1081,4 +1081,12 @@
 // startProcess();
 
 // modules
+import { PI, getCircumference, getArea } from "./math_util.js";
 
+console.log(PI);
+
+let circumference = getCircumference(20)
+console.log(circumference);
+
+let area = getArea(10)
+console.log(area);
