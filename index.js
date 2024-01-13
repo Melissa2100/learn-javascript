@@ -1034,8 +1034,14 @@
 //   .then((value) => console.log(value))
 //   .catch((error) => console.log(error));
 
-const promise = new Promise((resolve) => {
-  setTimeout(resolve, 5000);
+// const promise = new Promise((resolve) => {
+//   setTimeout(resolve, 5000);
+// });
+
+// promise.then(() => console.log("Thanks for waiting!"));
+
+const wait = time => new Promise((resolve) => {
+  setTimeout(resolve, time);
 });
 
-promise.then(() => console.log("Thanks for waiting!"));
+wait(3000).then(() => console.log("Thanks for waiting!"));
