@@ -978,27 +978,32 @@
 //   }
 // }
 
-// date object
-let date = new Date();
+// // date object
+// let date = new Date();
 
-// date = date.toLocaleString();
-document.getElementById("myLabel").innerHTML = formatTime(date);
+// // date = date.toLocaleString();
+// document.getElementById("myLabel").innerHTML = formatTime(date);
 
-function formatDate(date) {
-  let year = date.getFullYear();
-  let month = date.getMonth() + 1;
-  let day = date.getDate();
+// function formatDate(date) {
+//   let year = date.getFullYear();
+//   let month = date.getMonth() + 1;
+//   let day = date.getDate();
 
-  return `${month}/${day}/${year}`;
-}
+//   return `${month}/${day}/${year}`;
+// }
 
-function formatTime(date) {
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-  let amOrPm = hours >= 12 ? "pm" : "am";
+// function formatTime(date) {
+//   let hours = date.getHours();
+//   let minutes = date.getMinutes();
+//   let seconds = date.getSeconds();
+//   let amOrPm = hours >= 12 ? "pm" : "am";
 
-  hours = hours % 12 || 12; //converts time from military to standard
+//   hours = hours % 12 || 12; //converts time from military to standard
 
-  return `${hours}:${minutes}:${seconds} ${amOrPm}`;
-}
+//   return `${hours}:${minutes}:${seconds} ${amOrPm}`;
+// }
+
+// asynchronous code
+console.log("START");
+setTimeout(() => console.log("This is asynchronous"), 5000);
+console.log("END");
