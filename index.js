@@ -1003,7 +1003,17 @@
 //   return `${hours}:${minutes}:${seconds} ${amOrPm}`;
 // }
 
-// asynchronous code
-console.log("START");
-setTimeout(() => console.log("This is asynchronous"), 5000);
-console.log("END");
+// // asynchronous code
+// console.log("START");
+// setTimeout(() => console.log("This is asynchronous"), 5000);
+// console.log("END");
+
+// console.time
+// start
+console.time("Response time");
+
+// alert("CLICK THE OK BUTTON");
+setTimeout(() => console.log("HELLO!"), 3000);
+
+// end
+console.timeEnd("Resonse time");
