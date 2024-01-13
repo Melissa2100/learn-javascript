@@ -1020,16 +1020,22 @@
 
 // promises
 
-const promise = new Promise((resolve, reject) => {
-  let fileLoaded = false;
+// const promise = new Promise((resolve, reject) => {
+//   let fileLoaded = false;
 
-  if (fileLoaded) {
-    resolve("fileLoaded");
-  } else {
-    reject("File NOT loaded");
-  }
+//   if (fileLoaded) {
+//     resolve("fileLoaded");
+//   } else {
+//     reject("File NOT loaded");
+//   }
+// });
+
+// promise
+//   .then((value) => console.log(value))
+//   .catch((error) => console.log(error));
+
+const promise = new Promise((resolve) => {
+  setTimeout(resolve, 5000);
 });
 
-promise
-  .then((value) => console.log(value))
-  .catch((error) => console.log(error));
+promise.then(() => console.log("Thanks for waiting!"));
