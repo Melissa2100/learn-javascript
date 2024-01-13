@@ -1080,13 +1080,24 @@
 // }
 // startProcess();
 
-// modules
-import { PI, getCircumference, getArea } from "./math_util.js";
+// // modules
+// import { PI, getCircumference, getArea } from "./math_util.js";
 
-console.log(PI);
+// console.log(PI);
 
-let circumference = getCircumference(20)
-console.log(circumference);
+// let circumference = getCircumference(10)
+// console.log(circumference);
 
-let area = getArea(10)
-console.log(area);
+// let area = getArea(10)
+// console.log(area);
+
+// // or
+// import * as MathUtil from './math_util.js'
+
+// console.log(MathUtil.PI);
+
+// let circumference = MathUtil.getCircumference(10)
+// console.log(circumference);
+
+// let area = MathUtil.getArea(10)
+// console.log(area);
