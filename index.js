@@ -1018,7 +1018,7 @@
 // // end
 // console.timeEnd("Resonse time");
 
-// promises
+// // promises
 
 // const promise = new Promise((resolve, reject) => {
 //   let fileLoaded = false;
@@ -1030,9 +1030,8 @@
 //   }
 // });
 
-// promise
-//   .then((value) => console.log(value))
-//   .catch((error) => console.log(error));
+// promise.then((value) => console.log(value))
+//        .catch((error) => console.log(error));
 
 // const promise = new Promise((resolve) => {
 //   setTimeout(resolve, 5000);
@@ -1040,8 +1039,22 @@
 
 // promise.then(() => console.log("Thanks for waiting!"));
 
-const wait = time => new Promise((resolve) => {
-  setTimeout(resolve, time);
-});
+// const wait = time => new Promise((resolve) => {
+//   setTimeout(resolve, time);
+// });
 
-wait(3000).then(() => console.log("Thanks for waiting!"));
+// wait(3000).then(() => console.log("Thanks for waiting!"));
+
+// async
+async function loadFile() {
+  let fileLoaded = false;
+
+  if (fileLoaded) {
+    return"fileLoaded";
+  } else {
+    throw "File NOT loaded";
+  }
+}
+
+loadFile().then((value) => console.log(value))
+  .catch((error) => console.log(error));
