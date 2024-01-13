@@ -1045,16 +1045,37 @@
 
 // wait(3000).then(() => console.log("Thanks for waiting!"));
 
-// async
+// // async
+// async function loadFile() {
+//   let fileLoaded = false;
+
+//   if (fileLoaded) {
+//     return"fileLoaded";
+//   } else {
+//     throw "File NOT loaded";
+//   }
+// }
+
+// loadFile().then((value) => console.log(value))
+//   .catch((error) => console.log(error));
+
+// await
 async function loadFile() {
-  let fileLoaded = false;
+  let fileLoaded = true;
 
   if (fileLoaded) {
-    return"fileLoaded";
+    return "fileLoaded";
   } else {
     throw "File NOT loaded";
   }
 }
 
-loadFile().then((value) => console.log(value))
-  .catch((error) => console.log(error));
+async function startProcess() {
+  try {
+    let message = await loadFile();
+    console.log(message);
+  } catch (error) {
+    console.log(error);
+  }
+}
+startProcess();
