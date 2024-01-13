@@ -1059,23 +1059,26 @@
 // loadFile().then((value) => console.log(value))
 //   .catch((error) => console.log(error));
 
-// await
-async function loadFile() {
-  let fileLoaded = true;
+// // await
+// async function loadFile() {
+//   let fileLoaded = true;
 
-  if (fileLoaded) {
-    return "fileLoaded";
-  } else {
-    throw "File NOT loaded";
-  }
-}
+//   if (fileLoaded) {
+//     return "fileLoaded";
+//   } else {
+//     throw "File NOT loaded";
+//   }
+// }
 
-async function startProcess() {
-  try {
-    let message = await loadFile();
-    console.log(message);
-  } catch (error) {
-    console.log(error);
-  }
-}
-startProcess();
+// async function startProcess() {
+//   try {
+//     let message = await loadFile();
+//     console.log(message);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// startProcess();
+
+// modules
+
