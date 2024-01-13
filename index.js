@@ -1008,12 +1008,28 @@
 // setTimeout(() => console.log("This is asynchronous"), 5000);
 // console.log("END");
 
-// console.time
-// start
-console.time("Response time");
+// // console.time
+// // start
+// console.time("Response time");
 
-// alert("CLICK THE OK BUTTON");
-setTimeout(() => console.log("HELLO!"), 3000);
+// // alert("CLICK THE OK BUTTON");
+// setTimeout(() => console.log("HELLO!"), 3000);
 
-// end
-console.timeEnd("Resonse time");
+// // end
+// console.timeEnd("Resonse time");
+
+// promises
+
+const promise = new Promise((resolve, reject) => {
+  let fileLoaded = false;
+
+  if (fileLoaded) {
+    resolve("fileLoaded");
+  } else {
+    reject("File NOT loaded");
+  }
+});
+
+promise
+  .then((value) => console.log(value))
+  .catch((error) => console.log(error));
