@@ -1103,3 +1103,8 @@
 // console.log(area);
 
 // DOM
+console.log(document.title);
+console.log(document.URL);
+
+document.title = "Title goes here";
+document.location = "https://www.google.com";
