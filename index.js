@@ -1133,9 +1133,11 @@
 // let element = document.querySelector("[for]");
 // element.style.backgroundColor = "lightgreen";
 
-let elements = document.querySelectorAll("li");
-elements.forEach((element) => {
-  element.style.backgroundColor = "lightgreen";
-});
+// let elements = document.querySelectorAll("li");
+// elements.forEach((element) => {
+//   element.style.backgroundColor = "lightgreen";
+// });
+
+// 
 
 
