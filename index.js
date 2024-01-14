@@ -1123,3 +1123,6 @@ fruits.forEach((fruit) => {
     console.log(fruit.value);
   }
 });
+
+let vegetables = document.getElementsByTagName("li");
+vegetables[0].style.backgroundColor = "lightgreen";
