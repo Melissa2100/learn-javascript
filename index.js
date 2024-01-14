@@ -1117,3 +1117,9 @@ let element = document.getElementById("myTitle");
 element.style.backgroundColor = "lightgreen";
 
 let fruits = document.getElementsByName("fruits");
+
+fruits.forEach((fruit) => {
+  if (fruit.checked) {
+    console.log(fruit.value);
+  }
+});
