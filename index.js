@@ -1115,3 +1115,5 @@
 // how to select element in a web page
 let element = document.getElementById("myTitle");
 element.style.backgroundColor = "lightgreen";
+
+let fruits = document.getElementsByName("fruits");
