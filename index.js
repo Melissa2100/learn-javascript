@@ -1102,12 +1102,16 @@
 // let area = MathUtil.getArea(10)
 // console.log(area);
 
-// DOM
-// console.log(document.title);
-// console.log(document.URL);
+// // DOM
+// // console.log(document.title);
+// // console.log(document.URL);
 
-// document.title = "Title goes here";
-// document.location = "https://www.google.com";
+// // document.title = "Title goes here";
+// // document.location = "https://www.google.com";
 
-document.body.style.backgroundColor = "skyblue";
-document.getElementById("myDiv").innerHTML = "Hello";
+// document.body.style.backgroundColor = "skyblue";
+// document.getElementById("myDiv").innerHTML = "Hello";
+
+// how to select element in a web page
+let element = document.getElementById("myTitle");
+element.style.backgroundColor = "lightgreen";
