@@ -1140,5 +1140,5 @@
 
 // add/change HTML elements
 const nameTag = document.createElement("h1");
-nameTag.innerHTML = window.prompt("Enter your name");
-document.body.append(nameTag);
+nameTag.textContent = window.prompt("Enter your name");
+document.body.append(nameTag); //append: to add an object(last-child)
