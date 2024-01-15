@@ -1161,7 +1161,14 @@ const element = document.getElementById("myDiv");
 // element.onclick = doSomething;
 // element.onload = doSomething;
 // element.onchange = doSomething;
+element.onmouseover = doSomething;
+element.onmouseout = doSomethingElse;
 
 function doSomething() {
-  alert("Thank you!");
+  // alert("Thank you!");
+  element.style.backgroundColor = "red";
+}
+function doSomethingElse() {
+  // alert("Thank you!");
+  element.style.backgroundColor = "lightgreen";
 }
