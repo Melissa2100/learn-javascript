@@ -1153,8 +1153,14 @@
 
 // event
 
-const element = document.getElementById("myButton");
-element.onclick = doSomething;
+// const element = document.getElementById("myButton");
+// const element = document.body;
+// const element = document.getElementById("myText");
+const element = document.getElementById("myDiv");
+
+// element.onclick = doSomething;
+// element.onload = doSomething;
+// element.onchange = doSomething;
 
 function doSomething() {
   alert("Thank you!");
