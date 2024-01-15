@@ -1161,8 +1161,10 @@ const element = document.getElementById("myDiv");
 // element.onclick = doSomething;
 // element.onload = doSomething;
 // element.onchange = doSomething;
-element.onmouseover = doSomething;
-element.onmouseout = doSomethingElse;
+// element.onmouseover = doSomething;
+// element.onmouseout = doSomethingElse;
+element.onmousedown = doSomething;
+element.onmouseup = doSomethingElse;
 
 function doSomething() {
   // alert("Thank you!");
