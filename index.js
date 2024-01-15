@@ -1138,6 +1138,7 @@
 //   element.style.backgroundColor = "lightgreen";
 // });
 
-// 
-
-
+// add/change HTML elements
+const nameTag = document.createElement("h1");
+nameTag.innerHTML = window.prompt("Enter your name");
+document.body.append(nameTag);
