@@ -1138,7 +1138,15 @@
 //   element.style.backgroundColor = "lightgreen";
 // });
 
-// add/change HTML elements
-const nameTag = document.createElement("h1");
-nameTag.textContent = window.prompt("Enter your name");
-document.body.append(nameTag); //append: to add an object(last-child)
+// // add/change HTML elements
+// const nameTag = document.createElement("h1");
+// nameTag.textContent = window.prompt("Enter your name");
+// document.body.append(nameTag); //append: to add an object(last-child)
+
+// change css property
+const title = document.getElementById("myTitle");
+title.style.backgroundColor = "red";
+title.style.color = "#fff";
+title.style.textAlign = "center";
+title.style.fontSize = "15rem";
+title.style.border = "5px solid #000";
