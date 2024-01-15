@@ -1152,6 +1152,10 @@
 // title.style.border = "5px solid #000";
 
 // event
+
+const element = document.getElementById("myButton");
+element.onclick = doSomething;
+
 function doSomething() {
-  alert("You did something!");
+  alert("Thank you!");
 }
