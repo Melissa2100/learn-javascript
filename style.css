@@ -26,7 +26,7 @@
 
 /* show and hide HTML elements */
 body {
-  background: rgb(255, 85, 0);
+  background: rgb(148, 128, 128);
   color: white;
   text-align: center;
   justify-content: center;
@@ -35,6 +35,6 @@ body {
 
 #myImg {
   width: 300px;
-  margin-left: 17rem;
+  margin-left: 18rem;
   margin-top: 15px;
 }
