@@ -1176,4 +1176,17 @@
 // }
 
 // .addEventListener
-const innerDiv = addEventListener()
+const innerDiv = document.getElementById("innerDiv");
+
+innerDiv.addEventListener("mouseover", changeRed);
+innerDiv.addEventListener("mouseout", changeGreen);
+
+function changeRed() {
+  innerDiv.style.background = "red";
+  innerDiv.style.borderRadius = "0";
+}
+
+function changeGreen() {
+  innerDiv.style.background = "lightGreen";
+  innerDiv.style.borderRadius = "50px";
+}
