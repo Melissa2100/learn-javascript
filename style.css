@@ -9,3 +9,11 @@
   height: 100px;
   background-color: lightgreen;
 } */
+
+/* addEventListener */
+#innerDiv {
+  background-color: lightgreen;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+}

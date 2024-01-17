@@ -1175,4 +1175,5 @@
 //   element.style.backgroundColor = "lightgreen";
 // }
 
-// event handler
+// .addEventListener
+const innerDiv = addEventListener()
