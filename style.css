@@ -25,16 +25,16 @@
 } */
 
 /* show and hide HTML elements */
-body {
+/* body {
   background: rgb(148, 128, 128);
   color: white;
   text-align: center;
   justify-content: center;
   padding: 20rem;
-}
+} */
 
 #myImg {
   width: 300px;
-  margin-left: 18rem;
-  margin-top: 15px;
+  /* margin-left: 18rem;
+  margin-top: 15px; */
 }
