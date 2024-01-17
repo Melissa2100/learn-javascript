@@ -1177,16 +1177,25 @@
 
 // .addEventListener
 const innerDiv = document.getElementById("innerDiv");
+const outerDiv = document.getElementById("outerDiv");
 
-innerDiv.addEventListener("mouseover", changeRed);
-innerDiv.addEventListener("mouseout", changeGreen);
+// innerDiv.addEventListener("mouseover", changeRed);
+// innerDiv.addEventListener("mouseout", changeGreen);
 
-function changeRed() {
-  innerDiv.style.background = "red";
-  innerDiv.style.borderRadius = "50px";
-}
+// function changeRed() {
+//   innerDiv.style.background = "red";
+//   innerDiv.style.borderRadius = "50px";
+// }
 
-function changeGreen() {
-  innerDiv.style.background = "lightGreen";
-  innerDiv.style.borderRadius = "0";
+// function changeGreen() {
+//   innerDiv.style.background = "lightGreen";
+//   innerDiv.style.borderRadius = "0";
+// }
+
+// useCapture
+innerDiv.addEventListener("click", changeBlue);
+outerDiv.addEventListener("click", changeBlue);
+
+function changeBlue() {
+  this.style.backgroundColor = "lightblue";
 }
