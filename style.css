@@ -10,7 +10,7 @@
   background-color: lightgreen;
 } */
 
-/* addEventListener */
+/* addEventListener
 #innerDiv {
   background-color: lightgreen;
   width: 100px;
@@ -22,9 +22,19 @@
   background-color: lightgreen;
   width: 200px;
   height: 200px;
-}
+} */
 
 /* show and hide HTML elements */
+body {
+  background: rgb(255, 85, 0);
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding: 20rem;
+}
+
 #myImg {
   width: 300px;
+  margin-left: 17rem;
+  margin-top: 15px;
 }
