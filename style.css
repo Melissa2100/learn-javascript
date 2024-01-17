@@ -17,3 +17,9 @@
   height: 100px;
   border: 1px solid #000;
 }
+
+#outerDiv {
+  background-color: lightgreen;
+  width: 200px;
+  height: 200px;
+}

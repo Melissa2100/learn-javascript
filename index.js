@@ -1183,10 +1183,10 @@ innerDiv.addEventListener("mouseout", changeGreen);
 
 function changeRed() {
   innerDiv.style.background = "red";
-  innerDiv.style.borderRadius = "0";
+  innerDiv.style.borderRadius = "50px";
 }
 
 function changeGreen() {
   innerDiv.style.background = "lightGreen";
-  innerDiv.style.borderRadius = "50px";
+  innerDiv.style.borderRadius = "0";
 }
