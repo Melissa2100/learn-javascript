@@ -1192,10 +1192,11 @@ const outerDiv = document.getElementById("outerDiv");
 //   innerDiv.style.borderRadius = "0";
 // }
 
-// useCapture
+// useCapture //if 2 elements are taking the same space, and they are listening for the same event. You can specify which 1 as preference.
 innerDiv.addEventListener("click", changeBlue);
-outerDiv.addEventListener("click", changeBlue);
+outerDiv.addEventListener("click", changeBlue, true);
 
 function changeBlue() {
+  alert(`You selected ${this.id}`);
   this.style.backgroundColor = "lightblue";
 }
