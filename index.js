@@ -1175,28 +1175,30 @@
 //   element.style.backgroundColor = "lightgreen";
 // }
 
-// .addEventListener
-const innerDiv = document.getElementById("innerDiv");
-const outerDiv = document.getElementById("outerDiv");
+// // .addEventListener
+// const innerDiv = document.getElementById("innerDiv");
+// const outerDiv = document.getElementById("outerDiv");
 
-// innerDiv.addEventListener("mouseover", changeRed);
-// innerDiv.addEventListener("mouseout", changeGreen);
+// // innerDiv.addEventListener("mouseover", changeRed);
+// // innerDiv.addEventListener("mouseout", changeGreen);
 
-// function changeRed() {
-//   innerDiv.style.background = "red";
-//   innerDiv.style.borderRadius = "50px";
+// // function changeRed() {
+// //   innerDiv.style.background = "red";
+// //   innerDiv.style.borderRadius = "50px";
+// // }
+
+// // function changeGreen() {
+// //   innerDiv.style.background = "lightGreen";
+// //   innerDiv.style.borderRadius = "0";
+// // }
+
+// // useCapture //if 2 elements are taking the same space, and they are listening for the same event. You can specify which 1 as preference.
+// innerDiv.addEventListener("click", changeBlue);
+// outerDiv.addEventListener("click", changeBlue, true);
+
+// function changeBlue() {
+//   alert(`You selected ${this.id}`);
+//   this.style.backgroundColor = "lightblue";
 // }
 
-// function changeGreen() {
-//   innerDiv.style.background = "lightGreen";
-//   innerDiv.style.borderRadius = "0";
-// }
-
-// useCapture //if 2 elements are taking the same space, and they are listening for the same event. You can specify which 1 as preference.
-innerDiv.addEventListener("click", changeBlue);
-outerDiv.addEventListener("click", changeBlue, true);
-
-function changeBlue() {
-  alert(`You selected ${this.id}`);
-  this.style.backgroundColor = "lightblue";
-}
+// show and hide HTML element
