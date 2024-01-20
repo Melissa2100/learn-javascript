@@ -1222,5 +1222,8 @@ let y = 0;
 function move(event) {
   switch (event.key) {
     case "ArrowDown":
+      y += 5;
+      myDiv.style.top = y + "px";
+      break;
   }
 }
