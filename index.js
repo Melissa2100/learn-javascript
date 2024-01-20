@@ -1225,5 +1225,17 @@ function move(event) {
       y += 5;
       myDiv.style.top = y + "px";
       break;
+    case "ArrowUp":
+      y -= 5;
+      myDiv.style.top = y + "px";
+      break;
+    case "ArrowRight":
+      x += 5;
+      myDiv.style.left = x + "px";
+      break;
+    case "ArrowLeft":
+      x -= 5;
+      myDiv.style.left = x + "px";
+      break;
   }
 }
