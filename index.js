@@ -1214,3 +1214,13 @@
 // });
 
 // detect key presses
+const myDiv = document.getElementById("myDiv");
+window.addEventListener("keydown", move);
+let x = 0;
+let y = 0;
+
+function move(event) {
+  switch (event.key) {
+    case "ArrowDown":
+  }
+}
