@@ -1346,11 +1346,17 @@ let context = canvas.getContext("2d");
 
 //// draw circle
 //(x, y, r, sAngle, eAngle, counterclockwise)
-context.fillStyle = "brown";
-context.strokeStyle = "green";
-context.lineWidth = 20;
-context.beginPath();
-// context.arc(250, 250, 200, 3, 2 * Math.PI);
-context.arc(250, 250, 200, 0, 2 * Math.PI);
-context.stroke();
-context.fill();
+// context.fillStyle = "brown";
+// context.strokeStyle = "green";
+// context.lineWidth = 20;
+// context.beginPath();
+// // context.arc(250, 250, 200, 3, 2 * Math.PI);
+// context.arc(250, 250, 200, 0, 2 * Math.PI);
+// context.stroke();
+// context.fill();
+
+// draw text
+context.font = "50px MV Boli";
+context.fillStyle = "grey";
+context.textAlign = "center";
+context.fillText("YOU WIN!!!", canvas.width / 2, canvas.height / 2);
