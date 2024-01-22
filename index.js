@@ -1346,6 +1346,11 @@ let context = canvas.getContext("2d");
 
 //// draw circle
 //(x, y, r, sAngle, eAngle, counterclockwise)
+context.fillStyle = "brown";
+context.strokeStyle = "green";
+context.lineWidth = 20;
 context.beginPath();
+// context.arc(250, 250, 200, 3, 2 * Math.PI);
 context.arc(250, 250, 200, 0, 2 * Math.PI);
 context.stroke();
+context.fill();
