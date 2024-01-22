@@ -1312,11 +1312,40 @@ let context = canvas.getContext("2d");
 // context.stroke();
 
 // // Draw Triangle
-context.fillStyle = "pink";
+// context.strokeStyle = "purple";
+// context.fillStyle = "pink";
+// context.lineWidth = 10;
+// context.beginPath();
+// context.moveTo(250, 0);
+// context.lineTo(0, 250);
+// context.lineTo(500, 250);
+// context.lineTo(250, 0);
+// context.stroke();
+// context.fill();
+
+//// draw rectangle
+// context.fillStyle = "black";
+// context.fillRect(0, 0, 250, 250);
+// context.strokeStyle = "black";
+// context.strokeRect(0, 0, 250, 250);
+
+// context.fillStyle = "red";
+// context.fillRect(0, 250, 250, 250);
+// context.strokeStyle = "black";
+// context.strokeRect(0, 250, 250, 250);
+
+// context.fillStyle = "green";
+// context.fillRect(250, 250, 250, 250);
+// context.strokeStyle = "black";
+// context.strokeRect(250, 250, 250, 250);
+
+// context.fillStyle = "yellow";
+// context.fillRect(250, 0, 250, 250);
+// context.strokeStyle = "black";
+// context.strokeRect(250, 0, 250, 250);
+
+//// draw circle
+//(x, y, r, sAngle, eAngle, counterclockwise)
 context.beginPath();
-context.moveTo(250, 0);
-context.lineTo(0, 250);
-context.lineTo(500, 250);
-context.lineTo(250, 0);
+context.arc(250, 250, 200, 0, 2 * Math.PI);
 context.stroke();
-context.fill();
