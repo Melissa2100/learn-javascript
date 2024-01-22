@@ -1240,14 +1240,14 @@
 //   }
 // }
 
-// Animation
-const myButton = document.getElementById("myButton");
-const myAnimation = document.getElementById("myDiv");
+//// Animation
+// const myButton = document.getElementById("myButton");
+// const myAnimation = document.getElementById("myDiv");
 
-myButton.addEventListener("click", begin);
+// myButton.addEventListener("click", begin);
 
-function begin() {
-  let timerId = null;
+// function begin() {
+//   let timerId = null;
   // let x = 0;
   // let y = 0;
 
@@ -1256,13 +1256,13 @@ function begin() {
   // let x = 0;
   // let y = 0;
 
-  // scaling the element
-  let scaleX = 1; //1 means 100%
-  let scaleY = 1; //1 means 100%
+  //// scaling the element
+  // let scaleX = 1; //1 means 100%
+  // let scaleY = 1; //1 means 100%
 
-  setInterval(frame, 5);
+  // setInterval(frame, 5);
 
-  function frame() {
+  // function frame() {
     // if (x >= 200 || y >= 200) {
     //   clearInterval(timerId);
     // } else {
@@ -1284,15 +1284,17 @@ function begin() {
     //   myAnimation.style.transform = "rotateZ(" + degrees + "deg)";
     // }
 
-    // scaling the element
-    function frame() {
-      if (scaleX >= 2 || scaleY >= 2) {
-        clearInterval(timerId);
-      } else {
-        scaleX += 0.01;
-        scaleY += 0.01;
-        myAnimation.style.transform = "scale(" + scaleX + "," + scaleY + ")";
-      }
-    }
-  }
-}
+    //// scaling the element
+//     function frame() {
+//       if (scaleX >= 2 || scaleY >= 2) {
+//         clearInterval(timerId);
+//       } else {
+//         scaleX += 0.01;
+//         scaleY += 0.01;
+//         myAnimation.style.transform = "scale(" + scaleX + "," + scaleY + ")";
+//       }
+//     }
+//   }
+// }
+
+// Canvas API

@@ -49,9 +49,15 @@
 } */
 
 /* animation */
-#myDiv {
+/* #myDiv {
   background-color: lightgreen;
   width: 100px;
   height: 100px;
   position: relative;
+} */
+
+/* canvas API */
+#myCanvas {
+  border: 1px solid black;
+  background-color: skyblue;
 }
