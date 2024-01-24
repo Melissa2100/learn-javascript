@@ -1383,4 +1383,7 @@
 // }
 
 // cookie
-console.log(navigator.cookieEnabled);
+// console.log(navigator.cookieEnabled);
+document.cookie =
+  "firstName=Spongebob; expires=thur, 1 February 2024 12:00:00 GMT; path=/";
+  console.log(document.cookie);
