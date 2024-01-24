@@ -1385,5 +1385,7 @@
 // cookie
 // console.log(navigator.cookieEnabled);
 document.cookie =
-  "firstName=Spongebob; expires=thur, 1 February 2024 12:00:00 GMT; path=/";
-  console.log(document.cookie);
+  "firstName=SpongeBob; expires=thur, 1 February 2024 12:00:00 GMT; path=/";
+document.cookie =
+  "lastName=SquarePants; expires=thur, 1 February 2024 12:00:00 GMT; path=/";
+console.log(document.cookie);
