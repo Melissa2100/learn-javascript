@@ -1298,8 +1298,8 @@
 // }
 
 //// Canvas API
-let canvas = document.getElementById("myCanvas");
-let context = canvas.getContext("2d");
+// let canvas = document.getElementById("myCanvas");
+// let context = canvas.getContext("2d");
 
 // context.strokeStyle = "gold";
 // context.lineWidth = 10;
@@ -1355,8 +1355,12 @@ let context = canvas.getContext("2d");
 // context.stroke();
 // context.fill();
 
-// draw text
-context.font = "50px MV Boli";
-context.fillStyle = "grey";
-context.textAlign = "center";
-context.fillText("YOU WIN!!!", canvas.width / 2, canvas.height / 2);
+// // draw text
+// context.font = "50px MV Boli";
+// context.fillStyle = "grey";
+// context.textAlign = "center";
+// context.fillText("YOU WIN!!!", canvas.width / 2, canvas.height / 2);
+
+//  window object
+console.log(window.innerWidth);
+console.log(window.innerHeight);
