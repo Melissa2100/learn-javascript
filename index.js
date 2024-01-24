@@ -1361,7 +1361,7 @@
 // context.textAlign = "center";
 // context.fillText("YOU WIN!!!", canvas.width / 2, canvas.height / 2);
 
-//  window object
+////  window object
 // console.log(window.innerWidth);
 // console.log(window.innerHeight);
 
@@ -1369,15 +1369,18 @@
 // window.location.href = "https://google.com";
 // console.log(window.location.hostname);
 // console.log(window.location.pathname);
-const myButton = document.querySelector("#myButton");
+// const myButton = document.querySelector("#myButton");
 // myButton.addEventListener("click", () => window.open("https://google.com"));
 // myButton.addEventListener("click", () => window.close());
 // myButton.addEventListener("click", () => window.print());
 
 // window.alert("Hello");
 // window.confirm("Press OK to continue!");
-let age = window.prompt("Enter your age");
-if (age < 18) {
-  window.alert("You must be 18+ to visit this site");
-  window.close();
-}
+// let age = window.prompt("Enter your age");
+// if (age < 18) {
+//   window.alert("You must be 18+ to visit this site");
+//   window.close();
+// }
+
+// cookie
+console.log(navigator.cookieEnabled);
