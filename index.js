@@ -1362,5 +1362,9 @@
 // context.fillText("YOU WIN!!!", canvas.width / 2, canvas.height / 2);
 
 //  window object
-console.log(window.innerWidth);
-console.log(window.innerHeight);
+// console.log(window.innerWidth);
+// console.log(window.innerHeight);
+
+console.log(window.location.href);
+// window.location.href = "https://google.com";
+console.log(window.location.hostname);
