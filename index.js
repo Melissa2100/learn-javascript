@@ -1464,3 +1464,12 @@ let intervalid;
 let hrs = 0;
 let mins = 0;
 let secs = 0;
+
+startBtn.addEventListener("click", () => {
+  if (paused) {
+    paused = false;
+    startTime = Date.now() - elapsedTime;
+    intervalid = setInterval(updateTime, 1000);
+  }
+});
+pauseBtn.addEventListener("click", () => {})
