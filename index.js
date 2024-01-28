@@ -1433,3 +1433,5 @@
 
 const firstName = document.querySelector("#firstText");
 const lastName = document.querySelector("#lastText");
+const submitBtn = document.querySelector("#submitBtn");
+const cookiesBtn = document.querySelector("#cookiesBtn");
