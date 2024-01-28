@@ -70,6 +70,9 @@
 } */
 
 /* stopwatch */
+body {
+  background-color: #d7b384;
+}
 .timerBtn {
   width: 80px;
   height: 30px;
@@ -83,4 +86,14 @@
 
 #timeDisplay {
   font-size: 75px;
+  color: #40c437;
+  font-family: consolas, monospace;
+}
+
+#timeContainer {
+  margin: 20rem;
+  text-align: center;
+  border: 3px solid;
+  border-radius: 25px;
+  background-color:#5f4d14;
 }
