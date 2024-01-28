@@ -1402,26 +1402,26 @@ cookieBtn.addEventListener("click", () => {
 deleteCookie("firstName");
 deleteCookie("lastName");
 
-console.log(navigator.cookieEnabled);
-document.cookie =
-  "firstName=SpongeBob; expires=thur, 1 February 2024 12:00:00 GMT; path=/";
-document.cookie =
-  "lastName=SquarePants; expires=thur, 1 February 2024 12:00:00 GMT; path=/";
-console.log(document.cookie);
+// console.log(navigator.cookieEnabled);
+// document.cookie =
+//   "firstName=SpongeBob; expires=thur, 1 February 2024 12:00:00 GMT; path=/";
+// document.cookie =
+//   "lastName=SquarePants; expires=thur, 1 February 2024 12:00:00 GMT; path=/";
+// console.log(document.cookie);
 
-deleteCookie("firstName");
-deleteCookie("lastName");
-deleteCookie("email");
+// deleteCookie("firstName");
+// deleteCookie("lastName");
+// deleteCookie("email");
 
-setCookie("email", "Sponge@gmail.com", 365);
+// setCookie("email", "Sponge@gmail.com", 365);
 
-console.log(document.cookie);
+// console.log(document.cookie);
 
-setCookie("firstName", "SpongeBob", 365);
-setCookie("lastName", "SquarePants", 365);
+// setCookie("firstName", "SpongeBob", 365);
+// setCookie("lastName", "SquarePants", 365);
 
-console.log(getCookie("firstName"));
-console.log(getCookie("lastName"));
+// console.log(getCookie("firstName"));
+// console.log(getCookie("lastName"));
 
 function setCookie(name, value, daysToLive) {
   const date = new Date();
