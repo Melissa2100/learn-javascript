@@ -1434,14 +1434,17 @@
 const firstName = document.querySelector("#firstText");
 const lastName = document.querySelector("#lastText");
 const submitBtn = document.querySelector("#submitBtn");
-const cookiesBtn = document.querySelector("#cookiesBtn");
+const cookieBtn = document.querySelector("#cookieBtn");
 
 submitBtn.addEventListener("click", () => {
   setCookie("firstName", firstText.value, 365);
   setCookie("lastName", lastText.value, 365);
 });
 
-cookiesBtn.addEventListener("click", () => {
+cookieBtn.addEventListener("click", () => {
   firstText.value = getCookie("firstName");
   lastText.value = getCookie("lastName");
 });
+
+deleteCookie("firstName");
+deleteCookie("lastName");
