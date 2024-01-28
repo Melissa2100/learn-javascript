@@ -1450,7 +1450,7 @@
 //   return result;
 // }
 
-// interractive stopwatch
+// stopwatch
 const timeDisplay = document.querySelector("#timeDisplay");
 const startBtn = document.querySelector("#startBtn");
 const pauseBtn = document.querySelector("#pauseBtn");
