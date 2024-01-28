@@ -1382,54 +1382,7 @@
 //   window.close();
 // }
 
-//// cookies
-// console.log(navigator.cookieEnabled);
-// document.cookie =
-//   "firstName=SpongeBob; expires=thur, 1 February 2024 12:00:00 GMT; path=/";
-// document.cookie =
-//   "lastName=SquarePants; expires=thur, 1 February 2024 12:00:00 GMT; path=/";
-// console.log(document.cookie);
-
-// deleteCookie("firstName");
-// deleteCookie("lastName");
-// deleteCookie("email");
-
-// setCookie("email", "Sponge@gmail.com", 365);
-
-// console.log(document.cookie);
-
-// setCookie("firstName", "SpongeBob", 365);
-// setCookie("lastName", "SquarePants", 365);
-
-// console.log(getCookie("firstName"));
-// console.log(getCookie("lastName"));
-
-// function setCookie(name, value, daysToLive) {
-//   const date = new Date();
-//   date.setTime(date.getTime() + daysToLive * 24 * 60 * 60 * 1000);
-//   let expires = "expires=" + date.toUTCString();
-//   document.cookie = `${name}=${value}; ${expires}; path=/`;
-// }
-
-// // delete cookie
-// function deleteCookie(name) {
-//   setCookie(name, null, null);
-// }
-
-// // getting value of cookie by name
-// function getCookie(name) {
-//   const cDecoded = decodeURIComponent(document.cookie);
-//   const cArray = cDecoded.split(";");
-//   console.log(cArray);
-//   let result = null;
-
-//   cArray.forEach((element) => {
-//     if (element.indexOf(name) == 0) {
-//       result = element.substring(name.length + 1);
-//     }
-//   });
-//   return result;
-// }
+// cookies
 
 const firstName = document.querySelector("#firstText");
 const lastName = document.querySelector("#lastText");
@@ -1449,6 +1402,27 @@ cookieBtn.addEventListener("click", () => {
 deleteCookie("firstName");
 deleteCookie("lastName");
 
+console.log(navigator.cookieEnabled);
+document.cookie =
+  "firstName=SpongeBob; expires=thur, 1 February 2024 12:00:00 GMT; path=/";
+document.cookie =
+  "lastName=SquarePants; expires=thur, 1 February 2024 12:00:00 GMT; path=/";
+console.log(document.cookie);
+
+deleteCookie("firstName");
+deleteCookie("lastName");
+deleteCookie("email");
+
+setCookie("email", "Sponge@gmail.com", 365);
+
+console.log(document.cookie);
+
+setCookie("firstName", "SpongeBob", 365);
+setCookie("lastName", "SquarePants", 365);
+
+console.log(getCookie("firstName"));
+console.log(getCookie("lastName"));
+
 function setCookie(name, value, daysToLive) {
   const date = new Date();
   date.setTime(date.getTime() + daysToLive * 24 * 60 * 60 * 1000);
@@ -1456,10 +1430,12 @@ function setCookie(name, value, daysToLive) {
   document.cookie = `${name}=${value}; ${expires}; path=/`;
 }
 
+// delete cookie
 function deleteCookie(name) {
   setCookie(name, null, null);
 }
 
+// getting value of cookie by name
 function getCookie(name) {
   const cDecoded = decodeURIComponent(document.cookie);
   const cArray = cDecoded.split(";");
@@ -1473,3 +1449,6 @@ function getCookie(name) {
   });
   return result;
 }
+
+
+
