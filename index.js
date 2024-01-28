@@ -1396,12 +1396,13 @@ deleteCookie("email");
 
 // setCookie("email", "Sponge@gmail.com", 365);
 
-console.log(document.cookie);
+// console.log(document.cookie);
 
 setCookie("firstName", "SpongeBob", 365);
 setCookie("lastName", "SquarePants", 365);
 
-getCookie("firstName");
+console.log(getCookie("firstName"));
+console.log(getCookie("lastName"));
 
 function setCookie(name, value, daysToLive) {
   const date = new Date();
@@ -1418,5 +1419,14 @@ function deleteCookie(name) {
 // getting value of cookie by name
 function getCookie(name) {
   const cDecoded = decodeURIComponent(document.cookie);
-  console.log(cDecoded);
+  const cArray = cDecoded.split(";");
+  console.log(cArray);
+  let result = null;
+
+  cArray.forEach((element) => {
+    if (element.indexOf(name) == 0) {
+      result = element.substring(name.length + 1);
+    }
+  });
+  return result;
 }
