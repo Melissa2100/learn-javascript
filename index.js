@@ -1382,7 +1382,7 @@
 //   window.close();
 // }
 
-//// cookie
+//// cookies
 // console.log(navigator.cookieEnabled);
 // document.cookie =
 //   "firstName=SpongeBob; expires=thur, 1 February 2024 12:00:00 GMT; path=/";
@@ -1435,3 +1435,13 @@ const firstName = document.querySelector("#firstText");
 const lastName = document.querySelector("#lastText");
 const submitBtn = document.querySelector("#submitBtn");
 const cookiesBtn = document.querySelector("#cookiesBtn");
+
+submitBtn.addEventListener("click", () => {
+  setCookie("firstName", firstText.value, 365);
+  setCookie("lastName", lastText.value, 365);
+});
+
+cookiesBtn.addEventListener("click", () => {
+  firstText.value = getCookie("firstName");
+  lastText.value = getCookie("lastName");
+});
