@@ -1430,3 +1430,6 @@
 //   });
 //   return result;
 // }
+
+const firstName = document.querySelector("#firstText");
+const lastName = document.querySelector("#lastText");
