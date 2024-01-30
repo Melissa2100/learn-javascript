@@ -1523,13 +1523,16 @@ choiceBtns.forEach((button) =>
   button.addEventListener("click", () => {
     player = button.textContent;
     computerTurn();
+    playerText.textContent = `player: ${player}`;
+    computerText.textContent = `computer: ${computer}`;
+    resultText.textContent = checkWinner();
   })
 );
 
 function computerTurn() {
   const randNum = Math.floor(Math.random() * 3) + 1;
 
-  switch (random) {
+  switch (randNum) {
     case 1:
       computer = "ROCK";
       break;
@@ -1539,5 +1542,20 @@ function computerTurn() {
     case 3:
       computer = "SCISSORS";
       break;
+  }
+}
+
+function checkWinner() {
+  if (player == computer) {
+    return "Draw!";
+  }
+  else if (computer == 'ROCK') {
+    return (player == 'PAPER') ? "You Win!" : "You Lose!";
+  }
+  else if (computer == 'PAPER') {
+    return (player == 'SCISSORS') ? "You Win!" : "You Lose!";
+  }
+  else if (computer == 'SCISSORS') {
+    return (player == 'ROCK') ? "You Win!" : "You Lose!";
   }
 }
