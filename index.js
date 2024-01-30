@@ -1469,7 +1469,7 @@ startBtn.addEventListener("click", () => {
   if (paused) {
     paused = false;
     startTime = Date.now() - elapsedTime;
-    intervalId = setInterval(updateTime, 1000);
+    intervalId = setInterval(updateTime, 75);
   }
 });
 pauseBtn.addEventListener("click", () => {});
@@ -1479,12 +1479,16 @@ function updateTime() {
   elapsedTime = Date.now() - startTime;
 
   secs = Math.floor((elapsedTime / 1000) % 60);
-  mins = Math.floor(((elapsedTime / 1000) * 60) % 60);
-  hrs = Math.floor(((elapsedTime / 1000) * 60 * 60) % 60);
+  mins = Math.floor((elapsedTime / (1000 * 60)) % 60);
+  hrs = Math.floor((elapsedTime / (1000 * 60 * 60)) % 60);
+
+  secs = pad(secs);
+  mins = pad(mins);
+  hrs = pad(hrs);
 
   timeDisplay.textContent = `${hrs}:${mins}:${secs}`;
 
   function pad(unit) {
-    return ("0" + unit).length > 2 ? unit : "o" + unit;
+    return ("0" + unit).length > 2 ? unit : "0" + unit;
   }
 }
