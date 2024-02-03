@@ -98,25 +98,3 @@
   background-color:#5f4d14;
 } */
 
-/* Game - Rock, Paper, Scissors */
-.choiceBtn {
-  line-height: 30px;
-  width: 150px;
-}
-
-#gameDiv {
-  font-family: "Brush Script MT", cursive;
-  border: 3px solid;
-  border-radius: 25px;
-  padding: 10px;
-  background-color: lightgray;
-  text-align: center;
-}
-
-#playerText {
-  color: blue;
-}
-
-#computerText {
-  color: red;
-}
